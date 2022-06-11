@@ -1,0 +1,78 @@
+[
+    {
+        "merged": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-merged_res-20:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-main-22:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-merged_res-20:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-main-22:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-merged_res-20:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-main-22:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-merged_res-20:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-main-22:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-merged_res-20:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-main-22:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.mtelapplemusicapi.app-merged_res-20:/layout_activity_main.xml.flat",
+        "source": "com.example.mtelapplemusicapi.app-main-22:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-merged_res-20:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-main-22:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-merged_res-20:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-main-22:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-merged_res-20:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-main-22:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-merged_res-20:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-main-22:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-merged_res-20:/layout_item_layout.xml.flat",
+        "source": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-main-22:/layout/item_layout.xml"
+    },
+    {
+        "merged": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-merged_res-20:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-main-22:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-merged_res-20:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-main-22:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-merged_res-20:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-main-22:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-merged_res-20:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-pngs-15:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-merged_res-20:/xml_backup_rules.xml.flat",
+        "source": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-main-22:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-merged_res-20:/layout_activity_main.xml.flat",
+        "source": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-main-22:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-merged_res-20:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-main-22:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-merged_res-20:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/kevinnarang/.gradle/daemon/7.3.3/com.example.mtelapplemusicapi.app-main-22:/mipmap-hdpi/ic_launcher.webp"
+    }
+]

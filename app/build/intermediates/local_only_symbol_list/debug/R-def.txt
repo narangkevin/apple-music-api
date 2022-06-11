@@ -1,0 +1,30 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id LinearLayout01
+id LinearLayout02
+id LinearLayout03
+id album_name
+id alumArt
+id artist_name
+id recycler_view
+id search_btn
+id search_edit_txt
+id song_preview
+id song_title
+layout activity_main
+layout item_layout
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Theme.MtelAppleMusicAPI
+xml backup_rules
+xml data_extraction_rules

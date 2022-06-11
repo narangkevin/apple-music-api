@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MtelAppleMusicAPI" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#fc3c44</item>
+        <item name="colorPrimaryVariant">#f94c57</item>
+        <item name="colorOnPrimary">#c2cad7</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#fc3c44</item>
+        <item name="colorSecondaryVariant">#f94c57</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>
