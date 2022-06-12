@@ -54,6 +54,15 @@
 32-->/Users/kevinnarang/AndroidStudioProjects/MtelAppleMusicAPI/app/src/main/AndroidManifest.xml:24:27-74
 33            </intent-filter>
 34        </activity>
-35    </application>
-36
-37</manifest>
+35
+36        <provider
+36-->[com.squareup.picasso:picasso:2.8] /Users/kevinnarang/.gradle/caches/transforms-3/05255b021304aef3ccd36610e9446b06/transformed/picasso-2.8/AndroidManifest.xml:8:9-11:40
+37            android:name="com.squareup.picasso.PicassoProvider"
+37-->[com.squareup.picasso:picasso:2.8] /Users/kevinnarang/.gradle/caches/transforms-3/05255b021304aef3ccd36610e9446b06/transformed/picasso-2.8/AndroidManifest.xml:9:13-64
+38            android:authorities="com.example.mtelapplemusicapi.com.squareup.picasso"
+38-->[com.squareup.picasso:picasso:2.8] /Users/kevinnarang/.gradle/caches/transforms-3/05255b021304aef3ccd36610e9446b06/transformed/picasso-2.8/AndroidManifest.xml:10:13-72
+39            android:exported="false" />
+39-->[com.squareup.picasso:picasso:2.8] /Users/kevinnarang/.gradle/caches/transforms-3/05255b021304aef3ccd36610e9446b06/transformed/picasso-2.8/AndroidManifest.xml:11:13-37
+40    </application>
+41
+42</manifest>

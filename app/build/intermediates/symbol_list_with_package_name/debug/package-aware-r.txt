@@ -1695,6 +1695,10 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_baseline_library_music_24
+drawable ic_baseline_music_note_24
+drawable ic_baseline_pause_24
+drawable ic_baseline_play_arrow_24
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -1747,6 +1751,8 @@ id FUNCTION
 id LinearLayout01
 id LinearLayout02
 id LinearLayout03
+id LinearLayout04
+id LinearLayout05
 id META
 id NO_DEBUG
 id SHIFT
@@ -1815,6 +1821,7 @@ id alertTitle
 id aligned
 id all
 id alumArt
+id alumArt_player
 id always
 id animateToEnd
 id animateToStart
@@ -2018,6 +2025,7 @@ id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id nowPlaying
 id off
 id on
 id outline
@@ -2034,6 +2042,7 @@ id pathRelative
 id peekHeight
 id percent
 id pin
+id play_pause_icon
 id position
 id postLayout
 id progress_circular
@@ -2071,6 +2080,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id seekbar
 id select_dialog_listview
 id selected
 id selection_type

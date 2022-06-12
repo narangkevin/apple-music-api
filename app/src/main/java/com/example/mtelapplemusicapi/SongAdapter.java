@@ -1,6 +1,7 @@
 package com.example.mtelapplemusicapi;
 
 import android.content.Context;
+import android.telecom.Call;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,10 +19,12 @@ public class SongAdapter extends RecyclerView.Adapter<SongAdapter.MyViewHolder> 
 
     private Context mContext;
     private List<SongModel> mData;
+    private ItemClickListener mItemListener;
 
-    public SongAdapter(Context mContext, List<SongModel> mData) {
+    public SongAdapter(Context mContext, List<SongModel> mData, ItemClickListener itemClickListener) {
         this.mContext = mContext;
         this.mData = mData;
+        this.mItemListener = itemClickListener;
     }
 
     @NonNull
@@ -44,6 +47,10 @@ public class SongAdapter extends RecyclerView.Adapter<SongAdapter.MyViewHolder> 
         Glide.with(mContext)
                 .load(mData.get(position).getArtworkUrl100())
                 .into(holder.albumArt);
+
+        holder.itemView.setOnClickListener(view -> {
+            mItemListener.onItemClick(mData.get(position));
+        });
     }
 
     @Override
@@ -51,6 +58,10 @@ public class SongAdapter extends RecyclerView.Adapter<SongAdapter.MyViewHolder> 
         return mData.size();
     }
 
+    public interface ItemClickListener {
+        void onItemClick(SongModel details);
+
+    }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 

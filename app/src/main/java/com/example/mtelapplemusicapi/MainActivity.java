@@ -4,11 +4,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.media.MediaPlayer;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.SeekBar;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -31,6 +41,13 @@ public class MainActivity extends AppCompatActivity {
     EditText editText;
     Button searchBtn;
 
+    ImageView play_pause_img;
+    ImageView albumArt_player;
+    TextView nowPlaying_player;
+    SeekBar seekbar;
+    MediaPlayer mediaPlayer;
+    Handler handler = new Handler();
+
     RecyclerView recyclerView;
     List<SongModel> songList = new ArrayList<>();
 
@@ -44,6 +61,29 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recycler_view);
         editText = findViewById(R.id.search_edit_txt);
         searchBtn = findViewById(R.id.search_btn);
+        albumArt_player = findViewById(R.id.alumArt_player);
+        nowPlaying_player = findViewById(R.id.nowPlaying);
+
+        play_pause_img = findViewById(R.id.play_pause_icon);
+        seekbar = findViewById(R.id.seekbar);
+        mediaPlayer = new MediaPlayer();
+
+        seekbar.setMax(100);
+
+        play_pause_img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (mediaPlayer.isPlaying()) {
+                    handler.removeCallbacks(updater);
+                    mediaPlayer.pause();
+                    play_pause_img.setImageResource(R.drawable.ic_baseline_play_arrow_24);
+                } else {
+                    mediaPlayer.start();
+                    play_pause_img.setImageResource(R.drawable.ic_baseline_pause_24);
+                    updateSeekBar();
+                }
+            }
+        });
 
         searchBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,6 +98,39 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    private void prepareMediaPlayer(String trackURL, String trackName, String imageURL) {
+        try {
+            if (mediaPlayer.isPlaying()) {
+                mediaPlayer.stop();
+                mediaPlayer.reset();
+            }
+            mediaPlayer.setDataSource(trackURL);
+            mediaPlayer.prepare();
+            nowPlaying_player.setText(trackName);
+            Picasso.get().load(imageURL).into(albumArt_player);
+            play_pause_img.setImageResource(R.drawable.ic_baseline_pause_24);
+            mediaPlayer.start();
+
+        } catch (Exception exception) {
+            Toast.makeText(this, "exception.getMessage()", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void updateSeekBar() {
+        if (mediaPlayer.isPlaying()) {
+            seekbar.setProgress((int) (((float) mediaPlayer.getCurrentPosition() / mediaPlayer.getDuration()) * 100 ));
+            handler.postDelayed(updater, 1000);
+        }
+    }
+
+    private Runnable updater = new Runnable() {
+        @Override
+        public void run() {
+            updateSeekBar();
+            long currentDuration = mediaPlayer.getCurrentPosition();
+        }
+    };
 
     public class GetData extends AsyncTask<String, String, String> {
         @Override
@@ -127,9 +200,31 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void PopulateRecyclerView(List<SongModel> songList) {
-        SongAdapter songAdapter = new SongAdapter(this, songList);
+        SongAdapter songAdapter = new SongAdapter(this, songList, new SongAdapter.ItemClickListener() {
+            @Override
+            public void onItemClick(SongModel details) {
+                passPreviewURL(details.previewUrl, details.trackName, details.artworkUrl100);
+            }
+        });
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         recyclerView.setAdapter(songAdapter);
+    }
+
+    private void passPreviewURL(String previewURL, String nowPlaying, String albumArt) {
+        System.out.println("previewURL ---> "+previewURL+" ---> "+nowPlaying+" ---> "+albumArt);
+        prepareMediaPlayer(previewURL, nowPlaying, albumArt);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mediaPlayer.stop();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        mediaPlayer.stop();
     }
 }

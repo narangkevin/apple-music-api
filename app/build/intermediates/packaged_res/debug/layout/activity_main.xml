@@ -16,29 +16,86 @@
         <EditText
             android:id="@+id/search_edit_txt"
             android:layout_width="237dp"
-            android:layout_height="45dip"
+            android:layout_height="48dp"
             android:gravity="center_vertical"
             android:hint="Song, Album, Artist"
+            android:inputType="text"
             android:minHeight="48dp"
             android:paddingLeft="5dip"
             android:paddingRight="5dip"
-            android:textSize="17dip"
+            android:textColorHint="#78909C"
+            android:textSize="17sp"
             android:textStyle="bold" />
-        <Button android:id="@+id/search_btn"
+
+        <Button
+            android:id="@+id/search_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
             android:layout_gravity="right"
-            android:text="Search"
+            android:layout_marginLeft="15dp"
             android:minHeight="48dp"
-            />
+            android:text="Search"
+            android:textColor="#212121" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/LinearLayout04"
         android:layout_below="@+id/LinearLayout01"
         android:padding="10dp" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LinearLayout05"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/alumArt_player"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/nowPlaying"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nothing Playing"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/play_pause_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_baseline_play_arrow_24" />
+
+    </LinearLayout>
 
 </RelativeLayout>
